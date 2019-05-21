@@ -1,4 +1,5 @@
 def baseConversion(num, base):
+	# convert binary number of any base to decimal
 	convert = 0
 	numLength = 0
 	digit = len(num)-1
