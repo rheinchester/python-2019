@@ -8,5 +8,15 @@ def baseConversion(num, base):
 		numLength += 1
 		digit -= 1
 	return convert
-print(baseConversion('123', 8))
 
+def numOfBinaryOnes(num):
+	try:
+		for digit in num:
+			intDigit = int(digit)
+			if int(digit) > 1:
+				return 'Not a binary'
+	except ValueError:
+		return 'Wrong input'
+	return baseConversion(str(num), 1)
+	
+print(numOfBinaryOnes('1010x10101010'))
