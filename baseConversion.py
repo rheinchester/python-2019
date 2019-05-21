@@ -11,6 +11,7 @@ def baseConversion(num, base):
 	return convert
 
 def numOfBinaryOnes(num):
+	# get the number of ones in a binary
 	try:
 		for digit in num:
 			intDigit = int(digit)
