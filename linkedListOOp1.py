@@ -55,16 +55,19 @@ class LinkedList(object):
 
         while current and found is False:
             if current.get_val() == delete_val:
+                # we found the delete value
                 found = True
             else:
                 # move foreward
-                current = current.get_next()
                 previous = current
+                current = current.get_next()
             if current is None:
+                # current is not found because it is only none at the end of a list
                 raise ValueError('Value not found')
         if previous is None:
+            # it means we are still at the head
             self.head = current.get_next()
-        # if delete is successful, break current link
+        # if delete is successful, break current link by overlooking current
         previous.set_next(current.get_next())
 
 
