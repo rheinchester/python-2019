@@ -66,11 +66,4 @@ def isPal(s):
 
 s = 'aba aba'
 print(isPal(s))
-# print(gcdRecur(10, 67))
-
-# def iterPower(base, exp):
-#     result = 1
-#     while exp > 0:
-#         result *= base
-#         exp -= 1
-#     return result
+print(gcdRecur(10, 67))
